@@ -1,0 +1,18 @@
+GIThub /////////////////
+ssh-keygen -t rsa -b 4096 -C "addresse@toto.com"
+
+pwmr
+pwm pin value
+
+gpio -g mode 1 pwm
+gpio pwm 1 128
+
+
+
+
+////// OK //////
+
+gpio pwm-ms
+gpio mode 1 pwm
+gpio pwmc 1920
+gpio pwmr 200     # 0.1 ms per unit
