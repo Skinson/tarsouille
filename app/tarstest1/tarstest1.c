@@ -13,7 +13,21 @@ int main()
 {
 	signal(SIGINT, sig_handler);
 	fprintf (stdout, "Hello Tarsouilleurs !\n");
-	return 0;
+	while (1) {
+		if (!running) {
+		    // shutdown
+		    printf("Terminating program\n");
+		    return 0;
+		}
+		int key = getchar();
+		if (key == 'u') {
+			printf("Moving up !\n");
+		}
+		if (key == 'd') {
+			printf("Moving down !\n");
+		}
+        }
+
 }
 
 void sig_handler(int num) {
