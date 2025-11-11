@@ -12,7 +12,7 @@ gpio pwm 1 128
 
 ////// OK //////
 
-gpio pwm-ms
+gpio pwm-ms  pwm ms = 0
 gpio mode 1 pwm
 gpio pwmc 1920
 gpio pwmr 200     # 0.1 ms per unit
