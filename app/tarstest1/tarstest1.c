@@ -27,15 +27,15 @@ int main()
 
     // PWM hardware à 50 Hz (période 20 ms)
     pwmSetMode(PWM_MODE_MS);
-    pwmSetClock(192);      // Diviseur
-    pwmSetRange(2000);     // Résolution
+    pwmSetClock(1920);      // Diviseur
+    pwmSetRange(200);     // Résolution
 
     // 50 Hz => période = 20 ms => 2000 "pas"
     // 1 ms = ~100 / 2 ms = ~200
 
-    int pos_min = 50;   // 1 ms
-    int pos_mid = 150;   // 1.5 ms
-    int pos_max = 250;   // 2 ms
+    int pos_min = 5;   // 1 ms
+    int pos_mid = 15;   // 1.5 ms
+    int pos_max = 25;   // 2 ms
 
 	while (1) {
 		if (!running) {
