@@ -7,8 +7,6 @@
 #include "tarstest1.h"
 
 
-using namespace std;
-
 static bool running = true;
 
 int main()
