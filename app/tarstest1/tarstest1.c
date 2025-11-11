@@ -9,6 +9,8 @@
 
 using namespace std;
 
+static bool running = true;
+
 int main()
 {
 	signal(SIGINT, sig_handler);
